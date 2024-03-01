@@ -1,55 +1,8 @@
 !Evergine.Framework.Assets.AssetSources.Entities.SceneModel,Evergine.Framework
 Items:
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-    Name: cube
-    Tag: null
-    IsEnabled: true
-    IsStatic: false
-    Components:
-      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-        Id: 977a0fef-c38e-4101-9cf5-7c1f1a88e232
-        IsEnabled: true
-        LocalOrientation:
-          W: 0.959450006
-          X: -0.0901115909
-          Y: -0.205693156
-          Z: -0.170373052
-        LocalPosition:
-          X: 0.0
-          Y: 2.39316082
-          Z: -0.0223989487
-        LocalScale:
-          X: 1.0
-          Y: 1.0
-          Z: 1.0
-      - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
-        Id: 6f5c3904-c00e-4a1f-a248-253c1f0715c2
-        AsignedTo: Default
-        IsEnabled: true
-        Material: 02181b63-5a0e-46d1-9208-d92376ae33fb
-        UseCopy: false
-      - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
-        Id: 3ac3a798-f3d9-457c-8883-061bce6243c2
-        IsEnabled: true
-        Size: 1.0
-        UMirror: false
-        UOffset: 0.0
-        UTile: 1.0
-        VMirror: false
-        VOffset: 0.0
-        VTile: 1.0
-      - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
-        Id: 6a160182-7109-4833-950d-5b888644ccdd
-        DebugBoundingbox: true
-        IsCullingEnabled: true
-        IsEnabled: true
-        OrderBias: 0
-        RenderFlags: CastShadows
-    Children: []
-    Id: ab067348-026b-4df8-a590-94551b308088
-  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: Camera
-    Tag: null
+    Tag: camera
     IsEnabled: true
     IsStatic: false
     Components:
@@ -63,8 +16,8 @@ Items:
           Z: 0.0
         LocalPosition:
           X: 0.0
-          Y: 4.51895809
-          Z: 2.0
+          Y: 4.3638854
+          Z: 4.23338223
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -117,8 +70,67 @@ Items:
         TAU: 1.10000002
         TagFilter: null
         UsePhysicalParameters: false
+      - !OptiStock.Services.CameraFollow,OptiStock
+        Id: 21137bec-49e3-4215-9cfc-45d6b37a6ed4
+        CameraTag: camera
+        CubeTag: cube
+        IsEnabled: true
+        UpdateOrder: 0.5
     Children: []
     Id: 9841b6b3-9c09-4b60-b442-a5c63257ee02
+  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+    Name: cube
+    Tag: cube
+    IsEnabled: true
+    IsStatic: false
+    Components:
+      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+        Id: 977a0fef-c38e-4101-9cf5-7c1f1a88e232
+        IsEnabled: true
+        LocalOrientation:
+          W: 1.0
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        LocalPosition:
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        LocalScale:
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+        Id: 6f5c3904-c00e-4a1f-a248-253c1f0715c2
+        AsignedTo: Default
+        IsEnabled: true
+        Material: 02181b63-5a0e-46d1-9208-d92376ae33fb
+        UseCopy: false
+      - !Evergine.Components.Graphics3D.CubeMesh,Evergine.Components
+        Id: 3ac3a798-f3d9-457c-8883-061bce6243c2
+        IsEnabled: true
+        Size: 1.0
+        UMirror: false
+        UOffset: 0.0
+        UTile: 1.0
+        VMirror: false
+        VOffset: 0.0
+        VTile: 1.0
+      - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+        Id: 6a160182-7109-4833-950d-5b888644ccdd
+        DebugBoundingbox: true
+        IsCullingEnabled: true
+        IsEnabled: true
+        OrderBias: 0
+        RenderFlags: CastShadows
+      - !OptiStock.Services.CameraFollow,OptiStock
+        Id: c910b6e2-499a-43fa-90bd-68d29dfe417d
+        CameraTag: camera
+        CubeTag: cube
+        IsEnabled: true
+        UpdateOrder: 0.5
+    Children: []
+    Id: ab067348-026b-4df8-a590-94551b308088
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: SunLight
     Tag: null
@@ -144,10 +156,10 @@ Items:
       - !Evergine.Framework.Graphics.PhotometricDirectionalLight,Evergine.Framework
         Id: 5f6768ca-a7e6-4ab7-82b2-d9b3c42d111f
         Color:
-          A: 0
-          B: 228
-          G: 240
-          R: 249
+          A: 255
+          B: 253
+          G: 248
+          R: 255
         ColorByTemperature: true
         DebugMode: false
         GammaDistribution: 0.800000012
@@ -156,10 +168,10 @@ Items:
         IsEnabled: true
         IsShadowEnabled: true
         LinearColor:
-          A: 0.0
-          B: 0.77908951
-          G: 0.874792635
-          R: 0.9453125
+          A: 1.0
+          B: 0.982790232
+          G: 0.943362474
+          R: 1.0
         ShadowBias: 0.00499999989
         ShadowDistance: 80.0
         ShadowOpacity: 1.0

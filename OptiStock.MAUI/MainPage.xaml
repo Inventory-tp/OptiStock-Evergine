@@ -5,7 +5,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:evergine="clr-namespace:OptiStock.MAUI.Evergine">
     <Grid>
-        <Label Text="This is Evergine running within MAUI" />
-        <evergine:EvergineView x:Name="evergineView" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="8*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Small column on the left with icons -->
+        <StackLayout Grid.Column="0">
+            <Label Text="victor"></Label>
+            <!-- Add your icon menu items here -->
+        </StackLayout>
+
+        <!-- Medium-sized column on the right -->
+        <StackLayout Grid.Column="1">
+            <Label Text="coucou" ></Label>
+        </StackLayout>
+
+        <!-- Large column on the right for 3D view -->
+        <evergine:EvergineView x:Name="evergineView" Grid.Column="2" />
     </Grid>
 </ContentPage>
