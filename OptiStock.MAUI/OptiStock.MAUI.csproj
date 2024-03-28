@@ -28,6 +28,8 @@
 		<!-- Evergine -->
 		<EvergineAssetContent>$(SolutionDir)Content</EvergineAssetContent>
 		<EvergineProjectFilePath>$(SolutionDir)OptiStock.weproj</EvergineProjectFilePath>
+
+		<WindowsPackageType>None</WindowsPackageType>
 	</PropertyGroup>
 
 	<ItemGroup>
