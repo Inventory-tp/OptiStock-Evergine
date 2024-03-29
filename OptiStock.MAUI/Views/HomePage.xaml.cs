@@ -1,6 +1,6 @@
 using OptiStock;
 
-namespace OptiStock.MAUI
+namespace OptiStock.MAUI.Views
 {
     public partial class HomePage : ContentPage
     {

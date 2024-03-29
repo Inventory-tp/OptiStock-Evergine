@@ -7,8 +7,8 @@ namespace OptiStock.MAUI
         {
             InitializeComponent();
             //Register all routes
-            Routing.RegisterRoute("login", typeof(LoginPage));
-            Routing.RegisterRoute("home", typeof(HomePage));
+            Routing.RegisterRoute(nameof(Views.HomePage), typeof(Views.HomePage));
+            Routing.RegisterRoute(nameof(Views.LoginPage), typeof(Views.LoginPage));
         }
     }
 }

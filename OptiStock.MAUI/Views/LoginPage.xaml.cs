@@ -1,16 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OptiStock;
 
 namespace OptiStock.MAUI.Views
 {
-    internal class LoginPage
+    public partial class LoginPage : ContentPage
     {
+
+        public LoginPage()
+        {
+            InitializeComponent();
+        }
+
         private async void btnLogin_Click(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//login/home");
+            await Shell.Current.GoToAsync("//home");
         }
     }
 }

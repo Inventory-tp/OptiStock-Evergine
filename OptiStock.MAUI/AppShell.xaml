@@ -4,16 +4,18 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:OptiStock.MAUI"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:OptiStock.MAUI.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False">
 
     <!--Login Page-->
     <ShellContent
     Title="Login"
-    ContentTemplate="{DataTemplate local:LoginPage}"
+    ContentTemplate="{DataTemplate views:LoginPage}"
     Route="login"/>
 
     <ShellContent
     Title="Home"
-    ContentTemplate="{DataTemplate local:HomePage}"
+    ContentTemplate="{DataTemplate views:HomePage}"
     Route="home" />
 </Shell>
