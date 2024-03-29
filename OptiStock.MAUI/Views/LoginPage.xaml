@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="OptiStock.MAUI.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:evergine="clr-namespace:OptiStock.MAUI.Evergine"
+    Height="550" Width="800">
+
+    <Border>
+        <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Width="220"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            Margin="0,35,0,0">
+
+                        <Label Text="RJ CODE"
+                               TextColor="White"
+                               FontSize="25"
+                               FontAttributes="Bold"
+                               FontFamily="Montserrat"
+                               HorizontalTextAlignment="Center"/>
+
+                        <Label Text="Learning to code is useful no matter what your career ambitions are."
+                               TextColor="LightGray"
+                               FontSize="12"
+                               FontFamily="Montserrat"
+                               HorizontalTextAlignment="Center"
+                               Margin="0,5,0,0"/>
+
+
+                        <Label Text="Username"
+                               TextColor="DarkGray"
+                               FontSize="12"
+                               FontFamily="Montserrat"                             
+                               Margin="0,35,0,0"/>
+                        <Border
+                        Stroke="DarkGray"
+                        StrokeThickness="5.0">
+                            <Entry x:Name="txtUser"
+		                     FontSize="13"
+		                     FontFamily="Montserrat"                            
+		                     TextColor="White"
+		                     Height="28"
+		                     VerticalTextAlignment="Center"
+		                     Margin="0,5,0,0">
+                            </Entry>
+                        </Border>
+
+
+                        <Label Text="Password"
+                               TextColor="DarkGray"
+                               FontSize="12"
+                               FontFamily="Montserrat"                             
+                               Margin="0,15,0,0"/>
+
+                        <Border
+                        Stroke="DarkGray"
+                        StrokeThickness="5.0">
+                            <Entry x:Name="txtPass"
+                             FontSize="13"
+                             FontFamily="Montserrat"                            
+                             TextColor="White"
+                             Height="28"
+                             VerticalTextAlignment="Center"
+                             Margin="0,5,0,0"
+                               IsPassword="true">
+                            </Entry>
+                        </Border>
+
+                        <Button x:Name="btnLogin"                          
+                            BorderWidth="0"
+                            Text="LOG IN"
+                            TextColor="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"                         
+                            Margin="0,50,0,0"
+                            CommandParameter="btnLogin_Click">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#462AD8"/>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+            </Border>
+        
+</ContentPage>
