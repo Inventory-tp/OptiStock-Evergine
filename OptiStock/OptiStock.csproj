@@ -15,4 +15,7 @@
 		<PackageReference Include="Evergine.Targets" Version="2023.9.28.1837" />
 		<PackageReference Include="Evergine.CodeScenes" Version="2023.9.28.1837" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Services\" />
+	</ItemGroup>
 </Project>

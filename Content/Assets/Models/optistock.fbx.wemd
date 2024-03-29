@@ -1,0 +1,130 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: da6b6546-6a80-41d1-820f-277464313988
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: a861c747-5173-4a1f-b625-6b45cdeeeb49
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: 0544df91-510a-427c-bac0-ca6d1c85f738
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: DefaultMaterial
+        Item2: ba1948f6-06a9-41c2-bb80-8a8fed2a068b
+    Nodes:
+      - RootNode
+      - RootNode.Eta1
+      - RootNode.Eta2
+      - RootNode.Eta3
+      - RootNode.Eta4
+      - RootNode.Eta5
+      - RootNode.Table
+      - RootNode.Table.Cube_007
+      - RootNode.Plane
+      - RootNode.Cube
+      - RootNode.Cube_001
+      - RootNode.Cube_002
+      - RootNode.Cube_003
+      - RootNode.Cube_004
+      - RootNode.Cube_005
+      - RootNode.Cube_006
+      - RootNode.Cube_008
+      - RootNode.Cube_009
+      - RootNode.Cube_010
+      - RootNode.Cube_011
+      - RootNode.Cube_012
+      - RootNode.Cube_013
+      - RootNode.Cube_014
+      - RootNode.Cube_015
+      - RootNode.Cube_016
+      - RootNode.Cube_017
+      - RootNode.Cube_018
+      - RootNode.Cube_019
+      - RootNode.Cube_021
+      - RootNode.Cube_021.Cube_020
+      - RootNode.Cube_023
+      - RootNode.Cube_023.Cube_022
+      - RootNode.Cube_025
+      - RootNode.Cube_025.Cube_024
+      - RootNode.Cube_026
+      - RootNode.Cube_027
+      - RootNode.Cube_028
+      - RootNode.Cube_029
+      - RootNode.Cube_030
+      - RootNode.Cube_031
+      - RootNode.Cube_032
+      - RootNode.Cube_033
+      - RootNode.Cube_034
+      - RootNode.Cylinder
+      - RootNode.Cylinder_001
+      - RootNode.Cylinder_002
+      - RootNode.Cube_035
+      - RootNode.Cube_036
+      - RootNode.Cube_037
+      - RootNode.Cube_038
+      - RootNode.Cube_039
+      - RootNode.Cube_040
+      - RootNode.Cube_041
+      - RootNode.Cube_042
+      - RootNode.Cube_043
+      - RootNode.Cube_044
+      - RootNode.Cube_045
+      - RootNode.Cube_046
+      - RootNode.Cube_047
+      - RootNode.Cube_048
+      - RootNode.Cube_049
+      - RootNode.Cube_050
+      - RootNode.Cube_051
+      - RootNode.Cube_052
+      - RootNode.Cube_053
+      - RootNode.Cube_054
+      - RootNode.Cube_055
+      - RootNode.Cube_056
+      - RootNode.Cube_057
+      - RootNode.Cube_058
+      - RootNode.Cube_059
+      - RootNode.Cube_060
+      - RootNode.Cube_061
+      - RootNode.Cube_062
+      - RootNode.Cube_063
+      - RootNode.Cylinder_003
+      - RootNode.Cube_064
+      - RootNode.Cube_065
+      - RootNode.Cube_066
+      - RootNode.Cube_067
+      - RootNode.Cube_068
+      - RootNode.Cube_069
+      - RootNode.Cube_070
+      - RootNode.Cube_071
+      - RootNode.Cube_072
+      - RootNode.Cube_073
+      - RootNode.Cube_074
+      - RootNode.Cube_075
+      - RootNode.Cube_076
+      - RootNode.Cube_077
+      - RootNode.Cube_078
+      - RootNode.Cube_079
+      - RootNode.Cube_080
+      - RootNode.Cube_081
+      - RootNode.Cube_082
+      - RootNode.Cube_083
+      - RootNode.Cube_084
+      - RootNode.Cube_085
+      - RootNode.Cube_086
+      - RootNode.Cube_087
+      - RootNode.Cube_088
+      - RootNode.Cube_089
+      - RootNode.Cube_090
+      - RootNode.Cube_091
+      - RootNode.Cube_092
+SwapWindingOrder: false

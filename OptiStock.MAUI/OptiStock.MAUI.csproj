@@ -28,6 +28,9 @@
 		<!-- Evergine -->
 		<EvergineAssetContent>$(SolutionDir)Content</EvergineAssetContent>
 		<EvergineProjectFilePath>$(SolutionDir)OptiStock.weproj</EvergineProjectFilePath>
+		
+		<!-- BUG DE MORT -->
+		<WindowsPackageType>None</WindowsPackageType>
 	</PropertyGroup>
 
 	<ItemGroup>
