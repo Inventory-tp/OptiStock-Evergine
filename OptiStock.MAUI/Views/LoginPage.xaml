@@ -10,32 +10,32 @@
              WidthRequest="500"
              >
         <Label Text="OptiStock"
-               TextColor="Black"
+               TextColor="{AppThemeBinding Light=Black, Dark=White}"
                FontSize="25"
                FontAttributes="Bold"
                HorizontalOptions="Center"/>
 
         <Label Text="Connectez vous à votre compte pour"
-               TextColor="Gray"
+               TextColor="{AppThemeBinding Light=Grey, Dark=White}"
                FontSize="12"
                HorizontalOptions="Center"
                Margin="0,5,0,20"/>
 
         <Label Text="Username"
-               TextColor="Gray"
+               TextColor="{AppThemeBinding Light=Grey, Dark=White}"
                FontSize="12"/>
         <Entry x:Name="txtUser" />
 
         <Label Text="Password"
-               TextColor="Gray"
+               TextColor="{AppThemeBinding Light=Grey, Dark=White}"
                FontSize="12"
                Margin="0,10,0,0"/>
         <Entry x:Name="txtPass"
                IsPassword="True"/>
 
         <Button Text="SE CONNECTER"
-                BackgroundColor="Black"
-                TextColor="White"
+                BackgroundColor="{AppThemeBinding Light=Black, Dark=White}"
+                TextColor="{AppThemeBinding Light=White, Dark=Black}"
                 FontSize="16"
                 FontAttributes="Bold"
                 Margin="0,20,0,0"
