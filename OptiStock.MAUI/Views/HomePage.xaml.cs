@@ -1,4 +1,5 @@
-using OptiStock.MAUI.Models;
+using OptiStock;
+using OptiStock.MAUI.ViewsModels;
 
 namespace OptiStock.MAUI.Views
 {
@@ -6,9 +7,10 @@ namespace OptiStock.MAUI.Views
     {
         private readonly MyApplication evergineApplication;
 
-        public HomePage()
+        public HomePage(HomePageViewModel homePageViewModel)
         {
             InitializeComponent();
+            BindingContext = homePageViewModel;
             this.evergineApplication = new MyApplication();
             this.evergineView.Application = this.evergineApplication;
 

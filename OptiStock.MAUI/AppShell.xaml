@@ -18,4 +18,14 @@
     Title="Home"
     ContentTemplate="{DataTemplate views:HomePage}"
     Route="home" />
+
+    <ShellContent
+    Title="ManageUsers"
+    ContentTemplate="{DataTemplate views:ManageUsersPage}"
+    Route="management" />
+
+    <ShellContent
+    Title="NewUser"
+    ContentTemplate="{DataTemplate views:NewUserPage}"
+    Route="newUser" />
 </Shell>

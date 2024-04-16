@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OptiStock.MAUI.Views.ManageUsersPage"
+             xmlns:viewmodel="clr-namespace:OptiStock.MAUI.ViewsModels"
+             x:DataType="viewmodel:ManageUsersViewModel"
+             Title="ManageUsers">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="8*" />
+        </Grid.ColumnDefinitions>
+
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text=" + " Command="{Binding AddUserCommand}"/>
+        </ContentPage.ToolbarItems>
+
+            <!-- Small column on the left with icons -->
+        <StackLayout Grid.Column="0"> 
+            <ListView x:Name="usersList"></ListView>
+            <!-- Add you icon menu items here -->
+        </StackLayout>
+
+        <!-- Medium-sized column on the right -->
+        <StackLayout Grid.Column="1">
+            <Label Text="coucou" ></Label>
+        </StackLayout>
+
+        <!-- Large column on the right for 3D view -->
+        <StackLayout Grid.Column="2">
+            <Label Text="coucou" ></Label>
+        </StackLayout>
+    </Grid>
+</ContentPage>
