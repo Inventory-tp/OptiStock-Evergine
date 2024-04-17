@@ -19,9 +19,14 @@
 
         <!-- Medium-sized column on the right -->
         <StackLayout Grid.Column="1">
-            <Label Text="coucou" ></Label>
+            <Label Text="coucou" x:Name="labelText"></Label>
+            <Grid>
+                <Label Text="Button" x:Name="buttonText" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnButtonClicked" Command="{Binding ObjectCommand}" CommandParameter="cube" />
+                </Grid.GestureRecognizers>
+            </Grid>
         </StackLayout>
-
         <!-- Large column on the right for 3D view -->
         <evergine:EvergineView x:Name="evergineView" Grid.Column="2" />
     </Grid>
