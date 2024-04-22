@@ -8,7 +8,6 @@ namespace OptiStock.MAUI.Views
         {
             InitializeComponent();
             BindingContext = manageUsersViewModel;
-            usersList.ItemsSource = manageUsersViewModel.getUsers().Result;
         }
     }
 }

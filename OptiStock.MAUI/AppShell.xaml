@@ -22,10 +22,20 @@
     <ShellContent
     Title="ManageUsers"
     ContentTemplate="{DataTemplate views:ManageUsersPage}"
-    Route="management" />
+    Route="userManagement" />
 
     <ShellContent
     Title="NewUser"
     ContentTemplate="{DataTemplate views:NewUserPage}"
     Route="newUser" />
+
+    <ShellContent
+    Title="ManageProducts"
+    ContentTemplate="{DataTemplate views:ManageProductsPage}"
+    Route="productsManagement" />
+
+    <ShellContent
+    Title="NewProduct"
+    ContentTemplate="{DataTemplate views:NewProductPage}"
+    Route="newProduct" />
 </Shell>

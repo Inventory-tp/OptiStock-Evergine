@@ -1,16 +1,10 @@
-﻿using SQLite;
-
-namespace OptiStock.MAUI.Models
+﻿namespace OptiStock.MAUI.Models
 {
-    public class UserModel
+    public class UserModel : DomainObject
     {
-        //UUID in C# is generate with Guid
-        [PrimaryKey, AutoIncrement]
-        public Guid Id { get; set; }
-        public String firstName { get; set; }
-        public String lastName { get; set; }
-        public DateTime dateOfBirth { get; set; }
-        public String password { get; set; }
-        public UsersRights rights { get; set; }
+        public string Email { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public UsersRights Rights { get; set; }
     }
 }

@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OptiStock.MAUI.Models
+﻿namespace OptiStock.MAUI.Models
 {
-    public class ProductModel
+    public class ProductModel :DomainObject
     {
-        public Guid ID { get; set; }
-        public String name { get; set; }
-        public String brand { get; set; }
+        public string name { get; set; }
+        public string brand { get; set; }
         public int quantity { get; set; }
         public float weigth { get; set; }
     }

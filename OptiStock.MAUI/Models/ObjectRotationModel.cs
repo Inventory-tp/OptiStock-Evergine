@@ -10,7 +10,6 @@ namespace OptiStock.MAUI.Models
         public ICommand ObjectCommand { get; set; }
 
         private EvergineView evergineView;
-        private ObjectRotation objectRotation;
 
         public ObjectRotationModel(EvergineView evergineView)
         {

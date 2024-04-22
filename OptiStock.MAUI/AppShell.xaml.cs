@@ -11,6 +11,8 @@ namespace OptiStock.MAUI
             Routing.RegisterRoute(nameof(Views.LoginPage), typeof(Views.LoginPage));
             Routing.RegisterRoute(nameof(Views.ManageUsersPage), typeof(Views.ManageUsersPage));
             Routing.RegisterRoute(nameof(Views.NewUserPage), typeof(Views.NewUserPage));
+            Routing.RegisterRoute(nameof(Views.ManageProductsPage), typeof(Views.ManageProductsPage));
+            Routing.RegisterRoute(nameof(Views.NewProductPage), typeof(Views.NewProductPage));
         }
     }
 }

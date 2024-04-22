@@ -1,18 +1,13 @@
-﻿using OptiStock;
+﻿using OptiStock.MAUI.ViewsModels;
 
 namespace OptiStock.MAUI.Views
 {
     public partial class LoginPage : ContentPage
     {
-
-        public LoginPage()
+        public LoginPage(LoginPageViewModel loginPageViewModel)
         {
             InitializeComponent();
-        }
-
-        private async void btnLogin_Click(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("//home");
+            BindingContext = loginPageViewModel;
         }
     }
 }

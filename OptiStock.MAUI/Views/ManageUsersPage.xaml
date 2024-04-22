@@ -5,6 +5,11 @@
              xmlns:viewmodel="clr-namespace:OptiStock.MAUI.ViewsModels"
              x:DataType="viewmodel:ManageUsersViewModel"
              Title="ManageUsers">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text=" + " Command="{Binding AddUserCommand}"/>
+    </ContentPage.ToolbarItems>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
@@ -12,14 +17,11 @@
             <ColumnDefinition Width="8*" />
         </Grid.ColumnDefinitions>
 
-        <ContentPage.ToolbarItems>
-            <ToolbarItem Text=" + " Command="{Binding AddUserCommand}"/>
-        </ContentPage.ToolbarItems>
-
-            <!-- Small column on the left with icons -->
-        <StackLayout Grid.Column="0"> 
-            <ListView x:Name="usersList"></ListView>
-            <!-- Add you icon menu items here -->
+        <!-- Small column on the left with icons -->
+        <StackLayout Grid.Column="0">
+            
+            <ListView ItemsSource="{Binding GetUsersCommand}"></ListView>
+        <!-- Add you icon menu items here -->
         </StackLayout>
 
         <!-- Medium-sized column on the right -->
@@ -33,3 +35,4 @@
         </StackLayout>
     </Grid>
 </ContentPage>
+    
