@@ -1,7 +1,7 @@
 using Evergine.Framework;
 using Evergine.Framework.Services;
-using Evergine.Framework.Threading;
 using Evergine.Platform;
+using OptiStock.Services;
 
 namespace OptiStock
 {
@@ -20,6 +20,7 @@ namespace OptiStock
             this.Container.Register<AssetsService>();
             this.Container.Register<ForegroundTaskSchedulerService>();
             this.Container.Register<WorkActionScheduler>();
+            this.Container.Register<ObjectRotation>();
         }
 
         public override void Initialize()

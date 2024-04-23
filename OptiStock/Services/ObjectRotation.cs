@@ -3,7 +3,9 @@ using Evergine.Framework;
 using Evergine.Framework.Graphics;
 using Evergine.Framework.Services;
 using System;
+using System.Diagnostics;
 using System.Linq;
+using System.Timers;
 
 namespace OptiStock.Services
 {
@@ -13,10 +15,12 @@ namespace OptiStock.Services
         Entity entity;
         Text3DMesh textMesh;
 
+        private Scene scene;
+
         int timePassed = 0;
 
         ScreenContextManager screenContextManager;
-        public String defaultTagToFollow = "base";
+        public String defaultTagToFollow = "Base";
 
         public enum ChangeObjectToFollow
         {
@@ -35,8 +39,6 @@ namespace OptiStock.Services
                 this.changeObjectToFollow();
             }
         }
-
-
         
         protected override void Start()
         {
@@ -45,10 +47,16 @@ namespace OptiStock.Services
             screenContextManager = Application.Current.Container.Resolve<ScreenContextManager>();
             screenContextManager.OnActivatingScene += (scene) =>
             {
+                this.scene = scene;
                 entity = scene.Managers.EntityManager.FindAllByTag(defaultTagToFollow).First();
                 camera = scene.Managers.EntityManager.FindAllByTag("camera").First();
                 textMesh = scene.Managers.EntityManager.FindAllByTag("text").First().FindComponent<Text3DMesh>();
             };
+
+            // Boucle de rotation
+            System.Timers.Timer timer = new System.Timers.Timer(1000 / 60);
+            timer.Elapsed += (sender, e) => MyLoopMethod();
+            timer.Start();
         }
 
         protected void MyLoopMethod()
@@ -77,14 +85,16 @@ namespace OptiStock.Services
 
         public void changeObjectToFollow()
         {
-            switch (this.objectToFollow)
+            String tag = entity.Tag;
+            if (tag == "Base")
             {
-                case ChangeObjectToFollow.baseObject:
-                    textMesh.Text = "Base";
-                    break;
-                case ChangeObjectToFollow.Cube:
-                    textMesh.Text = "Cube";
-                    break;
+                entity = scene.Managers.EntityManager.FindAllByTag("Cube").First();
+                textMesh.Text = "Cube";
+            }
+            else
+            {
+                entity = scene.Managers.EntityManager.FindAllByTag("Base").First();
+                textMesh.Text = "Base";
             }
         }
     }

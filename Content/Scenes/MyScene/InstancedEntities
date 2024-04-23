@@ -2,7 +2,7 @@
 Items:
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: cube
-    Tag: cube
+    Tag: Cube
     IsEnabled: true
     IsStatic: false
     Components:
@@ -45,11 +45,6 @@ Items:
         IsEnabled: true
         OrderBias: 0
         RenderFlags: CastShadows
-      - !OptiStock.Services.ObjectRotation,OptiStock
-        Id: d1b1256e-cb0d-4e9f-bd5a-90363a2fa697
-        IsEnabled: true
-        UpdateOrder: 0.5
-        defaultTagToFollow: base
     Children: []
     Id: a497eace-e5ab-436f-9c0d-82bcac5e9929
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
@@ -138,9 +133,9 @@ Items:
               Y: 0.0
               Z: 0.0
             LocalPosition:
-              X: -3.04340219
-              Y: 1.4060688
-              Z: -5.40451431
+              X: -3.04338956
+              Y: 2.92916012
+              Z: -16.5156746
             LocalScale:
               X: 1.0
               Y: 1.0
@@ -182,7 +177,7 @@ Items:
     Id: 9841b6b3-9c09-4b60-b442-a5c63257ee02
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: capsule
-    Tag: base
+    Tag: Base
     IsEnabled: true
     IsStatic: false
     Components:

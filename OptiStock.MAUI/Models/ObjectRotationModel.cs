@@ -14,10 +14,10 @@ namespace OptiStock.MAUI.Models
         public ObjectRotationModel(EvergineView evergineView)
         {
             this.evergineView = evergineView;
-            var test = this.evergineView.Application.Container.Resolve<ObjectRotation>();
+            objectRotation = this.evergineView.Application.Container.Resolve<ObjectRotation>();
             ObjectCommand = new Command<string>((tag) =>
             {
-                test.ObjectToFollow = ObjectRotation.ChangeObjectToFollow.Cube;
+                objectRotation.ObjectToFollow = ObjectRotation.ChangeObjectToFollow.Cube;
             });
         }
     }
