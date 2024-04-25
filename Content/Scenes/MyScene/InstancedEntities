@@ -7,7 +7,7 @@ Items:
     IsStatic: false
     Components:
       - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-        Id: 809f1d2c-2305-4916-acfe-f81399ffb235
+        Id: f01a4207-4272-453e-8e3d-4691eeef4eb8
         IsEnabled: true
         LocalOrientation:
           W: 0.965925813
@@ -22,18 +22,8 @@ Items:
           X: 1.0
           Y: 1.0
           Z: 1.0
-      - !Evergine.Components.Cameras.FreeCamera3D,Evergine.Components
-        Id: 07d3e21d-cd4b-412f-88a6-1331d8afa583
-        IsEnabled: true
-        MaxPitch: 1.49225616
-        MouseSensibility: 0.0299999993
-        MoveSpeed: 5.0
-        RotationSpeed: 5.0
-        TouchMoveAndOrientationRatio: 0.5
-        TouchSensibility: 1.0
-        UpdateOrder: 0.5
       - !Evergine.Framework.Graphics.Camera3D,Evergine.Framework
-        Id: 5b10653e-93d2-48e7-884f-a07b2ac173ee
+        Id: 8bc34588-8880-4c0c-b4e7-511cbe751872
         Aperture: 1.0
         AutoDepthBounds: false
         AutoExposureEnabled: false
@@ -71,7 +61,7 @@ Items:
         TagFilter: null
         UsePhysicalParameters: false
     Children: []
-    Id: 9841b6b3-9c09-4b60-b442-a5c63257ee02
+    Id: ba9e829f-8d72-41fb-b342-d919857a919d
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: pointLight
     Tag: null
@@ -435,7 +425,7 @@ Items:
       - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
         Name: ETA7
         Tag: ETA7
-        IsEnabled: true
+        IsEnabled: false
         IsStatic: false
         Components:
           - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
