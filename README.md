@@ -1,33 +1,37 @@
 # OptiStock
+OptiStock est une application de gestion de stock développée avec .NET MAUI et Evergine.
 
-## Introduction
+## Prérequis
+- Téléchargez et installez [Evergine](https://evergine.com/)
+- Téléchargez et installez [Visual Studio](https://visualstudio.microsoft.com/fr/)
+- Clonez le repository GitHub de l'application
 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
+## Clone
 
-## Getting Started
+```bash
+git clone https://github.com/<lien-du-repo-final>.git
+```
 
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
+## Installation
 
-1. Installation process
-2. Software dependencies
-3. Latest releases
-4. API references
+1. Ajoutez le projet à Evergine :
+- Ouvrez **Evergine**
+- Ajoutez le projet via le bouton `Browse` 
+- Sélectionnez le projet `OptiStock`
 
-## Build and Test
+2. Ouvrez le projet dans **Visual Studio** depuis **Evergine** :
+- Allez dans `File > "Open C# Editor" > MAUI`
+- Evergine ouvrira le projet dans **Visual Studio** _(Assurez-vous d'avoir les extensions nécessaire pour un projet .NET)_
 
-TODO: Describe and show how to build your code and run the tests.
+## Lancement de l'application
 
-## Contribute
+1. Dans **Visual Studio**, assurez-vous que le mode de build est configuré sur `Debug`.
+2. Sélectionnez `OptiStock.MAUI` comme projet de démarrage.
+3. Cliquez sur le bouton `Run` ou appuyez sur `F5` pour lancer l'application en mode **debug**.
 
-TODO: Explain how other users and developers can contribute to make your code better.
+## Contributeurs
+- [Romain Buisson]()
+- [Jules Hubert]()
+- [Maxime Lecouturier 🌱]()
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops).
 
-----
-Powered by **[Evergine](http://www.evergine.com)**
-
-LET'S CONNECT!
-
-- [Youtube](https://www.youtube.com/subscription_center?add_user=EvergineChannel)
-- [Twitter](https://twitter.com/EvergineTeam)
-- [Blog](http://geeks.ms/evergineteam/)
