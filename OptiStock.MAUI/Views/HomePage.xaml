@@ -21,9 +21,63 @@
         <StackLayout Grid.Column="1">
             <Label Text="coucou" x:Name="labelText"></Label>
             <Grid>
-                <Label Text="Button" x:Name="buttonText" />
+                <Label Text="BASE" />
                 <Grid.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnButtonClicked" Command="{Binding ObjectCommand}" CommandParameter="cube" />
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="BASE" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA1" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA1" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA2" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA2" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA3" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA3" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA4" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA4" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA5" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA5" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA6" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA6" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA7" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA7" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="ETA8" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="ETA8" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Grid>
+                <Label Text="TABLE" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ObjectCommand}" CommandParameter="TABLE" />
                 </Grid.GestureRecognizers>
             </Grid>
         </StackLayout>

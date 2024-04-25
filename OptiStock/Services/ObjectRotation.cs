@@ -20,12 +20,20 @@ namespace OptiStock.Services
         int timePassed = 0;
 
         ScreenContextManager screenContextManager;
-        public String defaultTagToFollow = "Base";
+        public String defaultTagToFollow = "BASE";
 
         public enum ChangeObjectToFollow
         {
-            baseObject,
-            Cube
+            BASE,
+            ETA1,
+            ETA2,
+            ETA3,
+            ETA4,
+            ETA5,
+            ETA6,
+            ETA7,
+            ETA8,
+            TABLE
         }
 
         private ChangeObjectToFollow objectToFollow;
@@ -50,7 +58,7 @@ namespace OptiStock.Services
                 this.scene = scene;
                 entity = scene.Managers.EntityManager.FindAllByTag(defaultTagToFollow).First();
                 camera = scene.Managers.EntityManager.FindAllByTag("camera").First();
-                textMesh = scene.Managers.EntityManager.FindAllByTag("text").First().FindComponent<Text3DMesh>();
+                /* textMesh = scene.Managers.EntityManager.FindAllByTag("text").First().FindComponent<Text3DMesh>(); */
             };
 
             // Boucle de rotation
@@ -68,14 +76,14 @@ namespace OptiStock.Services
             Transform3D entityTransform = entity.FindComponent<Transform3D>();
             Transform3D cameraTransform = camera.FindComponent<Transform3D>();
 
-            float radius = 10.0f; // Rayon de la rotation
+            float radius = 20.0f; // Rayon de la rotation
             float angleSpeed = 0.01f; // Vitesse de rotation
 
             float angle = (float)timePassed * angleSpeed;
             float cameraX = entityTransform.Position.X + radius * (float)Math.Cos(angle);
             float cameraZ = entityTransform.Position.Z + radius * (float)Math.Sin(angle);
 
-            float objectY = entityTransform.Position.Y + 10;
+            float objectY = entityTransform.Position.Y + 20;
 
             cameraTransform.SetLocalTransform(new Evergine.Mathematics.Vector3(cameraX, objectY, cameraZ), cameraTransform.LocalOrientation, cameraTransform.LocalScale);
 
@@ -85,17 +93,8 @@ namespace OptiStock.Services
 
         public void changeObjectToFollow()
         {
-            String tag = entity.Tag;
-            if (tag == "Base")
-            {
-                entity = scene.Managers.EntityManager.FindAllByTag("Cube").First();
-                textMesh.Text = "Cube";
-            }
-            else
-            {
-                entity = scene.Managers.EntityManager.FindAllByTag("Base").First();
-                textMesh.Text = "Base";
-            }
+            String tag = objectToFollow.ToString();
+            entity = scene.Managers.EntityManager.FindAllByTag(tag).First();
         }
     }
 }

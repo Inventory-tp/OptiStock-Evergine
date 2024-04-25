@@ -4,6 +4,7 @@
 		<GenerateEvergineContent>True</GenerateEvergineContent>
 		<GenerateEvergineAssets>False</GenerateEvergineAssets>
 		<GenerateEvergineScenesCode>True</GenerateEvergineScenesCode>
+		<WindowsPackageType>None</WindowsPackageType>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Evergine.Common" Version="2023.9.28.1837" />
