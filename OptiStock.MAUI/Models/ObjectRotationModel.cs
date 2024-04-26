@@ -1,6 +1,5 @@
 ﻿using OptiStock.MAUI.Evergine;
 using OptiStock.Services;
-using System.Diagnostics;
 using System.Windows.Input;
 
 namespace OptiStock.MAUI.Models
@@ -10,6 +9,7 @@ namespace OptiStock.MAUI.Models
         public ICommand ObjectCommand { get; set; }
 
         private EvergineView evergineView;
+        private ObjectRotation objectRotation;
 
         public ObjectRotationModel(EvergineView evergineView)
         {
@@ -39,9 +39,6 @@ namespace OptiStock.MAUI.Models
                         break;
                     case "ETA6":
                         objectRotation.ObjectToFollow = ObjectRotation.ChangeObjectToFollow.ETA6;
-                        break;
-                    case "ETA7":
-                        objectRotation.ObjectToFollow = ObjectRotation.ChangeObjectToFollow.ETA7;
                         break;
                     case "ETA8":
                         objectRotation.ObjectToFollow = ObjectRotation.ChangeObjectToFollow.ETA8;
